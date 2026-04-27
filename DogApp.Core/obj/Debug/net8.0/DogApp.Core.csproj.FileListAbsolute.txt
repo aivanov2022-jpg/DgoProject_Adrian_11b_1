@@ -1,0 +1,15 @@
+C:\Users\Student\Desktop\DogApp.Core\bin\Debug\net8.0\DogApp.Core.deps.json
+C:\Users\Student\Desktop\DogApp.Core\bin\Debug\net8.0\DogApp.Core.dll
+C:\Users\Student\Desktop\DogApp.Core\bin\Debug\net8.0\DogApp.Core.pdb
+C:\Users\Student\Desktop\DogApp.Core\bin\Debug\net8.0\DogsApp.Infrastructure.dll
+C:\Users\Student\Desktop\DogApp.Core\bin\Debug\net8.0\DogsApp.Infrastructure.pdb
+C:\Users\Student\Desktop\DogApp.Core\obj\Debug\net8.0\DogApp.Core.csproj.AssemblyReference.cache
+C:\Users\Student\Desktop\DogApp.Core\obj\Debug\net8.0\DogApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Desktop\DogApp.Core\obj\Debug\net8.0\DogApp.Core.AssemblyInfoInputs.cache
+C:\Users\Student\Desktop\DogApp.Core\obj\Debug\net8.0\DogApp.Core.AssemblyInfo.cs
+C:\Users\Student\Desktop\DogApp.Core\obj\Debug\net8.0\DogApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\DogApp.Core\obj\Debug\net8.0\DogApp.C.F35EB932.Up2Date
+C:\Users\Student\Desktop\DogApp.Core\obj\Debug\net8.0\DogApp.Core.dll
+C:\Users\Student\Desktop\DogApp.Core\obj\Debug\net8.0\refint\DogApp.Core.dll
+C:\Users\Student\Desktop\DogApp.Core\obj\Debug\net8.0\DogApp.Core.pdb
+C:\Users\Student\Desktop\DogApp.Core\obj\Debug\net8.0\ref\DogApp.Core.dll

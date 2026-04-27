@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DgoApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+740a5941b3819465003713b005bc57444948aa0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cdc6f71b8e9b667efd94e522768842117203e2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("DgoApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DgoApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

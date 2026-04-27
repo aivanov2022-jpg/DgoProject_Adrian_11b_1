@@ -2,7 +2,7 @@ using DgoApp.Data;
 
 using DogApp.Core.Contracts;
 using DogApp.Core.Services;
-
+using DogsApp.Infrastructure.Data.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -33,6 +33,7 @@ namespace DgoApp
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
+           app.PrepareDatabase().Wait();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -58,11 +59,7 @@ namespace DgoApp
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
 
-            app.Run();
-
-            builder.Services.AddControllersWithViews();
-            builder.Services.AddTransient<IDogService, DogService>();
-           
+            app.Run();           
         }
     }
 }

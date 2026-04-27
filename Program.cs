@@ -1,4 +1,8 @@
 using DgoApp.Data;
+
+using DogApp.Core.Contracts;
+using DogApp.Core.Services;
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -55,6 +59,10 @@ namespace DgoApp
             app.MapRazorPages();
 
             app.Run();
+
+            builder.Services.AddControllersWithViews();
+            builder.Services.AddTransient<IDogService, DogService>();
+           
         }
     }
 }

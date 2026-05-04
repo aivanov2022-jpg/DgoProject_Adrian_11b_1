@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DgoApp.Models.Breed;
+
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 using System.ComponentModel.DataAnnotations;
@@ -21,17 +23,19 @@ namespace DgoApp.Models.Dog
         [Required]
         [MaxLength(50)]
         [Display(Name = "Breed")]
-        public string Breed { get; set; } = null!;
+        public int BreedId { get; set; } 
 
         [Display(Name = "Dog Picture")]
         public string? Picture { get; set; }
 
+        public virtual List<BreedPairViewModel> Breeds { get; set; } = new List<BreedPairViewModel>();
 
 
 
 
 
-       
-        
+
+
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj": {}
+    "C:\\Users\\Student\\Desktop\\DgoApp\\DogApp.Core\\DogApp.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj": {
+    "C:\\Users\\Student\\Desktop\\DgoApp\\DogApp.Core\\DogApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Desktop\\DgoApp\\DogApp.Core\\DogApp.Core.csproj",
         "projectName": "DogApp.Core",
-        "projectPath": "C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj",
+        "projectPath": "C:\\Users\\Student\\Desktop\\DgoApp\\DogApp.Core\\DogApp.Core.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Desktop\\DogApp.Core\\obj\\",
+        "outputPath": "C:\\Users\\Student\\Desktop\\DgoApp\\DogApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj"
+              "C:\\Users\\Student\\Desktop\\DgoApp\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Student\\Desktop\\DgoApp\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj"
               }
             }
           }
@@ -53,6 +53,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[8.0.26, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -73,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj": {
+    "C:\\Users\\Student\\Desktop\\DgoApp\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Desktop\\DgoApp\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj",
         "projectName": "DogsApp.Infrastructure",
-        "projectPath": "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Student\\Desktop\\DgoApp\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Student\\Desktop\\DgoApp\\DogsApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -130,6 +136,10 @@
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[8.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[8.0.26, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

@@ -1,5 +1,6 @@
 ﻿using DgoApp.Data;
 using DgoApp.Models;
+using DgoApp.Models.Breed;
 using DgoApp.Models.Dog;
 
 using DogApp.Core.Contracts;
@@ -16,10 +17,11 @@ namespace DgoApp.Controllers
     public class DogController : Controller
     {
         private readonly IDogService  _dogService;
-
-        public DogController(IDogService dogService)
+        private readonly IBreedService _breedService;
+        public DogController(IDogService dogService, IBreedService breedService)
         {
-            _dogService = dogService;
+            this._dogService = dogService;
+            this._breedService = breedService;
         }
 
         private readonly ApplicationDbContext _context;
@@ -48,7 +50,7 @@ namespace DgoApp.Controllers
                     Id = dogFromDb.Id,
                     Name = dogFromDb.Name,
                     Age = dogFromDb.Age,
-                    Breed = dogFromDb.Breed,
+                    Breed = dogFromDb.Breed.Name,
                     Picture = dogFromDb.Picture
                 }).ToList();
             return this.View(dogs);
@@ -70,7 +72,7 @@ namespace DgoApp.Controllers
                 Id = item.Id,
                 Name = item.Name,
                 Age = item.Age,
-                Breed = item.Breed,
+                Breed = item.Breed.Name,
                 Picture = item.Picture
             };
             return View(dog);
@@ -79,21 +81,28 @@ namespace DgoApp.Controllers
         // GET: DogController/Create
         public ActionResult Create()
         {
-            return View();
+            var dog = new DogCreateViewModel();
+            dog.Breeds = _breedService.GetBreeds()
+                .Select(c => new BreedPairViewModel()
+                {
+                    Id = c.Id,
+                    Name = c.Name
+                }).ToList();
+                return View(dog);
         }
 
         // POST: DogController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(DogCreateViewModel bindingModel)
+        public ActionResult Create(DogCreateViewModel dog)
         {
             if (ModelState.IsValid)
             {
-               var created = _dogService.Create(bindingModel.Name, bindingModel.Age, bindingModel.Breed, bindingModel.Picture);
+               var createdId = _dogService.Create(dog.Name, dog.Age,dog.BreedId, dog.Picture);
 
-                if (created)
+                if (createdId)
                 {
-                    return this.RedirectToAction("Successs");
+                    return this.RedirectToAction(nameof(Index));
                 }
 
                
@@ -105,23 +114,26 @@ namespace DgoApp.Controllers
         public IActionResult Edit(int id)
         {
             Dog item = _dogService.GetDogById(id);
-            if (id == null)
+            if (item == null)
             {
                 return NotFound();
             }
             Dog? iteam=_context.Dogs.Find(id);
-            if (iteam == null)
-            {
-                return NotFound();
-            }
+            
             DogEditViewModel dog = new DogEditViewModel()
             {
                 Id = iteam.Id,
                 Name = iteam.Name,
                 Age = iteam.Age,
-                Breed = iteam.Breed,
+                BreedId = iteam.BreedId,
                 Picture = iteam.Picture
             };
+            dog.Breeds = _breedService.GetBreeds()
+                .Select(c => new BreedPairViewModel()
+                {
+                    Id = c.Id,
+                    Name = c.Name
+                }).ToList();
             return View(dog);
         }
 
@@ -132,7 +144,7 @@ namespace DgoApp.Controllers
         {
             if (ModelState.IsValid)
             {
-               var updated = _dogService.UpdateDog(id, bindingModel.Name, bindingModel.Age, bindingModel.Breed, bindingModel.Picture);
+               var updated = _dogService.UpdateDog(id, bindingModel.Name, bindingModel.Age, bindingModel.BreedId, bindingModel.Picture);
                 if (updated)
                 {
                     return this.RedirectToAction("Index");
@@ -157,7 +169,7 @@ namespace DgoApp.Controllers
                 Id = item.Id,
                 Name = item.Name,
                 Age = item.Age,
-                Breed = item.Breed,
+                Breed = item.Breed.Name,
                 Picture = item.Picture
             };
             return View(dog);

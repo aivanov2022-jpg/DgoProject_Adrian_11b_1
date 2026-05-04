@@ -47,6 +47,22 @@
           }
         }
       },
+      "Castle.Core/5.2.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -478,11 +494,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/8.0.18": {
+      "Microsoft.EntityFrameworkCore/8.0.26": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.18",
-          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.18",
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.26",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.26",
           "Microsoft.Extensions.Caching.Memory": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1"
         },
@@ -500,7 +516,7 @@
           "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/8.0.18": {
+      "Microsoft.EntityFrameworkCore.Abstractions/8.0.26": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -513,7 +529,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/8.0.18": {
+      "Microsoft.EntityFrameworkCore.Analyzers/8.0.26": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -543,6 +559,23 @@
         },
         "build": {
           "build/net8.0/_._": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Proxies/8.0.26": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.2.1",
+          "Microsoft.EntityFrameworkCore": "8.0.26"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/8.0.18": {
@@ -1246,6 +1279,32 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "System.Diagnostics.EventLog/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          },
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Drawing.Common/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1670,6 +1729,7 @@
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.18",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.18",
           "Microsoft.AspNetCore.Identity.UI": "8.0.18",
+          "Microsoft.EntityFrameworkCore.Proxies": "8.0.26",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.18",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.18"
         },
@@ -1719,6 +1779,30 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Castle.Core/5.2.1": {
+      "sha512": "wHARzQA695jwwKreOzNsq54KiGqKP38tv8hi8e2FXDEC/sA6BtrX90tVPDkOfVu13PbEzr00TCV8coikl+D1Iw==",
+      "type": "package",
+      "path": "castle.core/5.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ASL - Apache Software Foundation License.txt",
+        "CHANGELOG.md",
+        "LICENSE",
+        "castle-logo.png",
+        "castle.core.5.2.1.nupkg.sha512",
+        "castle.core.nuspec",
+        "lib/net462/Castle.Core.dll",
+        "lib/net462/Castle.Core.xml",
+        "lib/net6.0/Castle.Core.dll",
+        "lib/net6.0/Castle.Core.xml",
+        "lib/netstandard2.0/Castle.Core.dll",
+        "lib/netstandard2.0/Castle.Core.xml",
+        "lib/netstandard2.1/Castle.Core.dll",
+        "lib/netstandard2.1/Castle.Core.xml",
+        "readme.txt"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -2522,10 +2606,10 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
-    "Microsoft.EntityFrameworkCore/8.0.18": {
-      "sha512": "LBc07vlgPxEXmjF0Kgn1S0mip3KLDPVD1OQOFu+4Mfpg1Z8OPMJ82MVCkqek1Ex2WeCzVGbNI9nRXcepHB+48g==",
+    "Microsoft.EntityFrameworkCore/8.0.26": {
+      "sha512": "lOBe7qWbtS4UBPZCDjwbDqDgJFgnPHA5duKEae0RrW67q3EyX3mnE3vPdJ3pFWtTFPcCX0V/7wFX/xE4SkJ2og==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/8.0.18",
+      "path": "microsoft.entityframeworkcore/8.0.26",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2534,14 +2618,14 @@
         "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props",
         "lib/net8.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.8.0.18.nupkg.sha512",
+        "microsoft.entityframeworkcore.8.0.26.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/8.0.18": {
-      "sha512": "aQGpxj0/RKXhSqDFbWENQgOg6WQH3z5Dezu3VBXaTCBHE6hAWQIZmmqdpO1k+lkANsoCSwPJZ4iFRqPPZXBXzg==",
+    "Microsoft.EntityFrameworkCore.Abstractions/8.0.26": {
+      "sha512": "UVXlDz6os+VLpCjEcCjxexXyrxlq7vM3OD2KnyQlnzM9Q8WCsKNI+1PJiR2B6Em+yDCROSHy1jPNXaqxrzrCPQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/8.0.18",
+      "path": "microsoft.entityframeworkcore.abstractions/8.0.26",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2549,14 +2633,14 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.8.0.18.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.8.0.26.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/8.0.18": {
-      "sha512": "aYkyWRkb+o9++mtIWn5XSYPVND5N9mFFfvdmBX1s6kCss6XTaZsFXf8QjvaiXAcGblp/HoYzS5lusx0ZqeFxzQ==",
+    "Microsoft.EntityFrameworkCore.Analyzers/8.0.26": {
+      "sha512": "uKIwY5fy7Xk3BrWMxryYyzQuzQxmhQADjZqXanXa27vE3vll8QHcUZuI1J1vyPu0bzyBITGdw9nJKDCsJmIHjg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/8.0.18",
+      "path": "microsoft.entityframeworkcore.analyzers/8.0.26",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2564,7 +2648,7 @@
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "docs/PACKAGE.md",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.8.0.18.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.8.0.26.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -2582,6 +2666,21 @@
         "lib/net8.0/Microsoft.EntityFrameworkCore.Design.xml",
         "microsoft.entityframeworkcore.design.8.0.18.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Proxies/8.0.26": {
+      "sha512": "JbqvgmGWHCAYhM80Cqa22Ry4PsoksJhaoYO+RtJ8GgoRbSOvPuSTBH6tWuk/24NxD8JPVVVlBy8EQVP1QjiLgA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.proxies/8.0.26",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.xml",
+        "microsoft.entityframeworkcore.proxies.8.0.26.nupkg.sha512",
+        "microsoft.entityframeworkcore.proxies.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/8.0.18": {
@@ -3604,6 +3703,37 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Diagnostics.EventLog/6.0.0": {
+      "sha512": "lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+      "type": "package",
+      "path": "system.diagnostics.eventlog/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.EventLog.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Diagnostics.EventLog.dll",
+        "lib/net461/System.Diagnostics.EventLog.xml",
+        "lib/net6.0/System.Diagnostics.EventLog.dll",
+        "lib/net6.0/System.Diagnostics.EventLog.xml",
+        "lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
+        "lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.dll",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+        "system.diagnostics.eventlog.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Drawing.Common/6.0.0": {
       "sha512": "NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
       "type": "package",
@@ -4465,7 +4595,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "DogsApp.Infrastructure >= 1.0.0"
+      "DogsApp.Infrastructure >= 1.0.0",
+      "Microsoft.EntityFrameworkCore.Proxies >= 8.0.26"
     ]
   },
   "packageFolders": {
@@ -4475,11 +4606,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Student\\Desktop\\DgoApp\\DogApp.Core\\DogApp.Core.csproj",
       "projectName": "DogApp.Core",
-      "projectPath": "C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj",
+      "projectPath": "C:\\Users\\Student\\Desktop\\DgoApp\\DogApp.Core\\DogApp.Core.csproj",
       "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Student\\Desktop\\DogApp.Core\\obj\\",
+      "outputPath": "C:\\Users\\Student\\Desktop\\DgoApp\\DogApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4500,8 +4631,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj"
+            "C:\\Users\\Student\\Desktop\\DgoApp\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Student\\Desktop\\DgoApp\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj"
             }
           }
         }
@@ -4521,6 +4652,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Proxies": {
+            "target": "Package",
+            "version": "[8.0.26, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

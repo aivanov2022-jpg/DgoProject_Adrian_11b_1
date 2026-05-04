@@ -18,7 +18,7 @@ namespace DogsApp.Infrastructure.Data.Infrastructure
         public static async Task<ApplicationBuilder> PrepareDatabase(this ApplicationBuilder app)
         {
             using var serviceScope = app.ApplicationServices.CreateScope();
-            var serviceProvider = serviceScope.ServiceProvider;
+            var service = serviceScope.ServiceProvider;
             var data = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
             SeedBreeds(data);
             return app;

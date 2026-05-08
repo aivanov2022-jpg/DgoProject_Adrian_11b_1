@@ -2,6 +2,8 @@ using DgoApp.Data;
 
 using DogApp.Core.Contracts;
 using DogApp.Core.Services;
+
+using DogsApp.Infrastructure.Data.Domain;
 using DogsApp.Infrastructure.Data.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +23,7 @@ namespace DgoApp
                 UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => {
+            builder.Services.AddDefaultIdentity<ApplicationUser>(options => {
                 options.SignIn.RequireConfirmedAccount = false;
                 options.Password.RequireDigit = false;
                 options.Password.RequireLowercase = false;

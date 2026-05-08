@@ -50,7 +50,7 @@ namespace DgoApp.Controllers
                     Id = dogFromDb.Id,
                     Name = dogFromDb.Name,
                     Age = dogFromDb.Age,
-                    Breed = dogFromDb.Breed.Name,
+                    BreedName = dogFromDb.Breed.Name,
                     Picture = dogFromDb.Picture
                 }).ToList();
             return this.View(dogs);
@@ -72,7 +72,7 @@ namespace DgoApp.Controllers
                 Id = item.Id,
                 Name = item.Name,
                 Age = item.Age,
-                Breed = item.Breed.Name,
+                BreedName = item.Breed.Name,
                 Picture = item.Picture
             };
             return View(dog);
@@ -94,7 +94,7 @@ namespace DgoApp.Controllers
         // POST: DogController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(DogCreateViewModel dog)
+        public ActionResult Create([FromForm]DogCreateViewModel dog)
         {
             if (ModelState.IsValid)
             {
@@ -169,7 +169,7 @@ namespace DgoApp.Controllers
                 Id = item.Id,
                 Name = item.Name,
                 Age = item.Age,
-                Breed = item.Breed.Name,
+                BreedName = item.Breed.Name,
                 Picture = item.Picture
             };
             return View(dog);
@@ -192,5 +192,6 @@ namespace DgoApp.Controllers
               
 
         }
+        
     }
 }

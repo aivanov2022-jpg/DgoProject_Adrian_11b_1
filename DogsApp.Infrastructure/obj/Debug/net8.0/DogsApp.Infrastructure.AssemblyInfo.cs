@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DogsApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63909bdcb841fe41662615cdd645e967962e521f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c5d1506ec943b28d5b8cd26198144207f4af862")]
 [assembly: System.Reflection.AssemblyProductAttribute("DogsApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DogsApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

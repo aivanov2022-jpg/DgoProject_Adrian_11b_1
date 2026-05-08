@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "sd+lKryP0KE=",
-  "success": true,
+  "dgSpecHash": "l2WLAljPQvI=",
+  "success": false,
   "projectFilePath": "C:\\Users\\Student\\Desktop\\DgoApp\\DgoApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Student\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
@@ -169,5 +169,28 @@
     "C:\\Users\\Student\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\Student\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\Users\\Student\\Desktop\\DgoApp\\DgoApp.csproj",
+      "filePath": "C:\\Users\\Student\\Desktop\\DgoApp\\DgoApp.csproj",
+      "libraryId": "C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\Users\\Student\\Desktop\\DgoApp\\DgoApp.csproj",
+      "filePath": "C:\\Users\\Student\\Desktop\\DgoApp\\DgoApp.csproj",
+      "libraryId": "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

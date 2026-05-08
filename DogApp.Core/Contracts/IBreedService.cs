@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DogsApp.Infrastructure.Data.Domain;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,10 @@ using System.Threading.Tasks;
 
 namespace DogApp.Core.Contracts
 {
-    internal interface IBreedService
+    public interface IBreedService
     {
+        List<Breed> GetBreeds();
+        Breed GetBreedById(int breedId);
+        List<Dog> GetDogsByBreed(int BreedId);
     }
 }

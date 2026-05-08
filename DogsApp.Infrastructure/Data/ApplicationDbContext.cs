@@ -4,7 +4,7 @@ using DogsApp.Infrastructure.Data.Domain;
 
 namespace DgoApp.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

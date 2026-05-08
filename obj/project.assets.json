@@ -2805,36 +2805,6 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
-      },
-      "DogApp.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "DogsApp.Infrastructure": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DogApp.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DogApp.Core.dll": {}
-        }
-      },
-      "DogsApp.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.18",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.18",
-          "Microsoft.AspNetCore.Identity.UI": "8.0.18",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.18",
-          "Microsoft.EntityFrameworkCore.Tools": "8.0.18"
-        },
-        "compile": {
-          "bin/placeholder/DogsApp.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DogsApp.Infrastructure.dll": {}
-        }
       }
     }
   },
@@ -7885,22 +7855,12 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "DogApp.Core/1.0.0": {
-      "type": "project",
-      "path": "../DogApp.Core/DogApp.Core.csproj",
-      "msbuildProject": "../DogApp.Core/DogApp.Core.csproj"
-    },
-    "DogsApp.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../DogsApp.Infrastructure/DogsApp.Infrastructure.csproj",
-      "msbuildProject": "../DogsApp.Infrastructure/DogsApp.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "DogApp.Core >= 1.0.0",
-      "DogsApp.Infrastructure >= 1.0.0",
+      "C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj",
+      "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 8.0.18",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.18",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.18",
@@ -8018,5 +7978,25 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\Student\\Desktop\\DogApp.Core\\DogApp.Core.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\Student\\Desktop\\DogsApp.Infrastructure\\DogsApp.Infrastructure.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

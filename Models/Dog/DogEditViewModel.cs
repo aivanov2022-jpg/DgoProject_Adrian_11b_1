@@ -1,4 +1,4 @@
-﻿using DgoApp.Models.Breed;
+using DgoApp.Models.Breed;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -21,7 +21,6 @@ namespace DgoApp.Models.Dog
         public int Age { get; set; }
 
         [Required]
-        [MaxLength(50)]
         [Display(Name = "Breed")]
         public int BreedId { get; set; } 
 

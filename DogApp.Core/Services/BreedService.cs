@@ -1,4 +1,4 @@
-﻿using DgoApp.Data;
+using DgoApp.Data;
 
 using DogApp.Core.Contracts;
 
@@ -21,7 +21,7 @@ namespace DogApp.Core.Services
             _context = context;
         }
 
-        public Breed GetBreedById(int breedId)
+        public Breed? GetBreedById(int breedId)
         {
             return _context.Breeds.Find(breedId);
         }

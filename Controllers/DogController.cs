@@ -1,4 +1,4 @@
-﻿using DgoApp.Data;
+using DgoApp.Data;
 using DgoApp.Models;
 using DgoApp.Models.Breed;
 using DgoApp.Models.Dog;
@@ -22,13 +22,6 @@ namespace DgoApp.Controllers
         {
             this._dogService = dogService;
             this._breedService = breedService;
-        }
-
-        private readonly ApplicationDbContext _context;
-
-        public DogController(ApplicationDbContext context)
-        {
-            _context = context;
         }
 
         public IActionResult Success()
@@ -62,7 +55,7 @@ namespace DgoApp.Controllers
         // GET: DogController/Details/5
         public IActionResult Details(int id)
         {
-           Dog item = _dogService.GetDogById(id);
+           Dog? item = _dogService.GetDogById(id);
             if (item == null)
             {
                 return NotFound();
@@ -113,20 +106,19 @@ namespace DgoApp.Controllers
         // GET: DogController/Edit/5
         public IActionResult Edit(int id)
         {
-            Dog item = _dogService.GetDogById(id);
+            Dog? item = _dogService.GetDogById(id);
             if (item == null)
             {
                 return NotFound();
             }
-            Dog? iteam=_context.Dogs.Find(id);
             
             DogEditViewModel dog = new DogEditViewModel()
             {
-                Id = iteam.Id,
-                Name = iteam.Name,
-                Age = iteam.Age,
-                BreedId = iteam.BreedId,
-                Picture = iteam.Picture
+                Id = item.Id,
+                Name = item.Name,
+                Age = item.Age,
+                BreedId = item.BreedId,
+                Picture = item.Picture
             };
             dog.Breeds = _breedService.GetBreeds()
                 .Select(c => new BreedPairViewModel()
@@ -157,7 +149,7 @@ namespace DgoApp.Controllers
         // GET: DogController/Delete/5
         public IActionResult Delete(int id)
         {
-            Dog item = _dogService.GetDogById(id);
+            Dog? item = _dogService.GetDogById(id);
             if (item == null)
             {
                 return NotFound();

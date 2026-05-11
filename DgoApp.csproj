@@ -18,8 +18,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DogApp.Core\DogApp.Core.csproj" />
-    <ProjectReference Include="..\DogsApp.Infrastructure\DogsApp.Infrastructure.csproj" />
+    <ProjectReference Include="DogApp.Core\DogApp.Core.csproj" />
+    <ProjectReference Include="DogsApp.Infrastructure\DogsApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="DogApp.Core\**" />
+    <Compile Remove="DogsApp.Infrastructure\**" />
+    <Content Remove="DogApp.Core\**" />
+    <Content Remove="DogsApp.Infrastructure\**" />
+    <EmbeddedResource Remove="DogApp.Core\**" />
+    <EmbeddedResource Remove="DogsApp.Infrastructure\**" />
+    <None Remove="DogApp.Core\**" />
+    <None Remove="DogsApp.Infrastructure\**" />
   </ItemGroup>
 
 </Project>

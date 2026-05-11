@@ -1,4 +1,4 @@
-﻿using DgoApp.Data;
+using DgoApp.Data;
 
 using DogsApp.Infrastructure.Data.Domain;
 
@@ -15,14 +15,22 @@ namespace DogsApp.Infrastructure.Data.Infrastructure
 {
     public static class ApplicationBuilderExtension
     {
-        public static async Task<ApplicationBuilder> PrepareDatabase(this ApplicationBuilder app)
+        public static IApplicationBuilder PrepareDatabase(this IApplicationBuilder app)
         {
             using var serviceScope = app.ApplicationServices.CreateScope();
-            var service = serviceScope.ServiceProvider;
             var data = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-            SeedBreeds(data);
+            
+            try
+            {
+                SeedBreeds(data);
+            }
+            catch (Exception ex)
+            {
+                // Log error or skip if database is not ready (e.g. during migrations)
+                Console.WriteLine("Could not prepare database: " + ex.Message);
+            }
+            
             return app;
-
         }
 
         private static void SeedBreeds(ApplicationDbContext data)

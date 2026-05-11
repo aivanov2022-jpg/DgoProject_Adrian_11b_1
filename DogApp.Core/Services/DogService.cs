@@ -1,4 +1,4 @@
-﻿using DgoApp.Data;
+using DgoApp.Data;
 
 using DogApp.Core.Contracts;
 
@@ -23,17 +23,20 @@ namespace DogApp.Core.Services
 
         public bool Create(string name, int age, int breedId, string? picture)
         {
+            var breed = _context.Breeds.Find(breedId);
+            if (breed == null) return false;
+
             Dog item = new Dog
             {
                 Name = name,
                 Age = age,
-                Breed = _context.Breeds.Find(breedId),
+                Breed = breed,
                 Picture = picture
             };
             _context.Dogs.Add(item);
             return _context.SaveChanges() != 0;
         }
-        public Dog GetDogById(int dogId)
+        public Dog? GetDogById(int dogId)
         {
             return _context.Dogs.Find(dogId);
         }
@@ -46,26 +49,21 @@ namespace DogApp.Core.Services
 
         public List<Dog> GetDogs(string searchStringBreed, string searchStringName)
         {
-            List<Dog> dogs = _context.Dogs.ToList();
-            if (!String.IsNullOrEmpty(searchStringBreed) && !String.IsNullOrEmpty(searchStringName))
+            IQueryable<Dog> query = _context.Dogs;
+            if (!String.IsNullOrEmpty(searchStringBreed))
             {
-                dogs = dogs.Where(d => d.Breed.Name.Contains(searchStringBreed) && d.Name.Contains(searchStringName)).ToList();
+                query = query.Where(d => d.Breed.Name.Contains(searchStringBreed));
             }
-            else if (!String.IsNullOrEmpty(searchStringBreed))
+            if (!String.IsNullOrEmpty(searchStringName))
             {
-                dogs = dogs.Where(d => d.Breed.Name.Contains(searchStringBreed)).ToList();
+                query = query.Where(d => d.Name.Contains(searchStringName));
             }
-            else if (!String.IsNullOrEmpty(searchStringName))
-            {
-                dogs = dogs.Where(d => d.Name.Contains(searchStringName)).ToList();
-            }
-            return dogs;
-
+            return query.ToList();
         }
         public bool RemoveById(int dogId)
         {
             var dog = GetDogById(dogId);
-            if (dog == default(Dog))
+            if (dog == null)
             {
                 return false;
             }
@@ -76,13 +74,17 @@ namespace DogApp.Core.Services
         public bool UpdateDog(int dogId, string name, int age, int breedId, string? picture)
         {
             var dog = GetDogById(dogId);
-            if (dog == default(Dog))
+            if (dog == null)
             {
                 return false;
             }
+
+            var breed = _context.Breeds.Find(breedId);
+            if (breed == null) return false;
+
             dog.Name = name;
             dog.Age = age;
-            dog.Breed = _context.Breeds.Find(breedId);
+            dog.Breed = breed;
             dog.Picture = picture;
             _context.Update(dog);
             return _context.SaveChanges() != 0;

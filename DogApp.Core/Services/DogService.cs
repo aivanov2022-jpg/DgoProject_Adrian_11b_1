@@ -21,7 +21,7 @@ namespace DogApp.Core.Services
             _context = context;
         }
 
-        public bool Create(string name, int age, int breedId, string? picture)
+        public bool Create(string name, int age, int breedId, string? picture, string userId)
         {
             var breed = _context.Breeds.Find(breedId);
             if (breed == null) return false;
@@ -31,7 +31,8 @@ namespace DogApp.Core.Services
                 Name = name,
                 Age = age,
                 Breed = breed,
-                Picture = picture
+                Picture = picture,
+                OwnerId = userId
             };
             _context.Dogs.Add(item);
             return _context.SaveChanges() != 0;

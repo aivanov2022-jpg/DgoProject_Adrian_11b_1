@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 using System.ComponentModel.DataAnnotations;
@@ -20,6 +20,9 @@ namespace DgoApp.Models
 
         [Display(Name = "Dog Picture")]
         public string? Picture { get; set; }
+
+        [Display(Name = "Full Name")]
+        public string FullName { get; set; } = null!;
 
 
 

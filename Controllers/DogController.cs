@@ -9,11 +9,14 @@ using DogsApp.Infrastructure.Data.Domain;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 using System.Net.Cache;
+using System.Security.Claims;
 
 namespace DgoApp.Controllers
 {
+    [Authorize]
     public class DogController : Controller
     {
         private readonly IDogService  _dogService;
@@ -35,6 +38,7 @@ namespace DgoApp.Controllers
 
 
         // GET: DogController
+        [AllowAnonymous]
         public ActionResult Index(string searchStringBreed, string searchStringName)
         {
            List<DogAllViewModel> dogs = _dogService.GetDogs(searchStringBreed, searchStringName)
@@ -44,13 +48,11 @@ namespace DgoApp.Controllers
                     Name = dogFromDb.Name,
                     Age = dogFromDb.Age,
                     BreedName = dogFromDb.Breed.Name,
-                    Picture = dogFromDb.Picture
+                    Picture = dogFromDb.Picture,
+                    FullName = dogFromDb.Owner.FirstName + " " + dogFromDb.Owner.LastName
                 }).ToList();
             return this.View(dogs);
         }
-
-
-
 
         // GET: DogController/Details/5
         public IActionResult Details(int id)
@@ -66,7 +68,8 @@ namespace DgoApp.Controllers
                 Name = item.Name,
                 Age = item.Age,
                 BreedName = item.Breed.Name,
-                Picture = item.Picture
+                Picture = item.Picture,
+                FullName = item.Owner.FirstName + " " + item.Owner.LastName
             };
             return View(dog);
         }
@@ -91,7 +94,8 @@ namespace DgoApp.Controllers
         {
             if (ModelState.IsValid)
             {
-               var createdId = _dogService.Create(dog.Name, dog.Age,dog.BreedId, dog.Picture);
+               string currentUserId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+               var createdId = _dogService.Create(dog.Name, dog.Age,dog.BreedId, dog.Picture, currentUserId);
 
                 if (createdId)
                 {

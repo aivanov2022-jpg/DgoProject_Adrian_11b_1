@@ -12,7 +12,7 @@ namespace DgoApp
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -32,13 +32,14 @@ namespace DgoApp
                 options.Password.RequiredLength = 5;
 
             })
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
             builder.Services.AddTransient<IDogService, DogService>();
             builder.Services.AddTransient<IBreedService, BreedService>();
 
             var app = builder.Build();
-            app.PrepareDatabase();
+            await app.PrepareDatabase();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

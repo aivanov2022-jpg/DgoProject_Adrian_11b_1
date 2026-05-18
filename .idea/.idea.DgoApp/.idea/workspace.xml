@@ -17,79 +17,15 @@
   <component name="ChangeListManager">
     <list default="true" id="2b49c014-5713-45a2-ac27-8a9d2b9d2a1b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DgoApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DgoApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/bin/Debug/net8.0/DogApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/bin/Debug/net8.0/DogApp.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/bin/Debug/net8.0/DogApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/bin/Debug/net8.0/DogApp.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/bin/Debug/net8.0/DogsApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/bin/Debug/net8.0/DogsApp.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/bin/Debug/net8.0/DogsApp.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/bin/Debug/net8.0/DogsApp.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/DogApp.Core.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/ref/DogApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/ref/DogApp.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/refint/DogApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/Debug/net8.0/refint/DogApp.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/DogApp.Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/DogApp.Core.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/Data/Infrastructure/ApplicationBuilderExtension.cs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/Data/Infrastructure/ApplicationBuilderExtension.cs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/bin/Debug/net8.0/DogsApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/bin/Debug/net8.0/DogsApp.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/bin/Debug/net8.0/DogsApp.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/bin/Debug/net8.0/DogsApp.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogApp.Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/DogApp.Core/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/DogsApp.Infrastructure.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/ref/DogsApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/ref/DogsApp.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/refint/DogsApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/Debug/net8.0/refint/DogsApp.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/DogsApp.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/DogsApp.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/DgoApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/DgoApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/DgoApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/DgoApp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/DgoApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/DgoApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/DgoApp.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/DgoApp.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/DogApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/DogApp.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/DogApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/DogApp.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/DogsApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/DogsApp.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/DogsApp.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/DogsApp.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/DogsApp.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/DgoApp.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/project.razor.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/project.razor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ref/DgoApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ref/DgoApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/refint/DgoApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/refint/DgoApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/staticwebassets.pack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/DgoApp.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/DgoApp.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +125,8 @@
       <updated>1778482875088</updated>
       <workItem from="1778482879241" duration="286000" />
       <workItem from="1778483177596" duration="2413000" />
-      <workItem from="1779081096458" duration="872000" />
+      <workItem from="1779081096458" duration="2191000" />
+      <workItem from="1779085177851" duration="611000" />
     </task>
     <servers />
   </component>

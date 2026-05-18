@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DogApp.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a2c5429ec3375f90411ead62789018c1c6d3c11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03a4a9828e88c614ea6ca0c4d31994f50d5a4e6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("DogApp.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DogApp.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
